@@ -27,8 +27,8 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: ['~/plugins/repositories.js'],
+
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -48,9 +48,16 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+    baseURL: 'https://api.thecatapi.com/',
+    proxy: true,
 
+  },
+  proxy: {
+    '/api/': { target: 'https://api.thecatapi.com/', pathRewrite: { '^/api/': '' }, changeOrigin: true },
+  },
+  privateRuntimeConfig: {
+    apiKey: '8fd205be-4776-4309-bc03-9a6712a10bdc'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

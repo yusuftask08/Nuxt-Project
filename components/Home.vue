@@ -13,7 +13,7 @@
               whitespace-nowrap
               dark:text-white
             "
-            >Yengec App</span
+            >Yengec Cat App</span
           >
         </a>
         <div class="flex md:order-2">
