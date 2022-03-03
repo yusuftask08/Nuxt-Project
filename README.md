@@ -1,6 +1,19 @@
-# Nuxt-Project
+  <h1 align="center">Yengec Cat App 🐱 </h1> 
 
-## Build Setup
+Uygulama anasayfa açıldığında rastgele kedi görseli getiriyor. Dilerseniz butona tıkladığınzda görseli değiştirebiliyorsunuz.  :eyes:
+
+
+## Teknolojiler 👏
+
+- [x] Nuxt
+- [x] Tailwind Css
+- [x] Proxy
+- [x] Repository Pattern
+- [x] Axios
+- [x] Responsive :iphone: :computer:	
+
+
+## Build Setup 📦
 
 ```bash
 # install dependencies
